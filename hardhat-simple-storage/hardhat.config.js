@@ -3,6 +3,9 @@ require("dotenv").config()
 require("@nomicfoundation/hardhat-verify")
 require("./tasks/block-number")
 require("hardhat-gas-reporter")
+//this coverage will go through the test and check how many line of .sol have been covered in testing
+require("solidity-coverage")
+
 const SEPOLIA_RPC_URL =
     process.env.SEPOLIA_RPC_URL ||
     "https://eth-sepolia.g.alchemy.com/v2/8cAuHYtk5pZaV5S4z9QKIKLbAj3JEc3i"
