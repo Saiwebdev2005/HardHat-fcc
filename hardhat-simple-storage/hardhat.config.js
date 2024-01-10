@@ -1,6 +1,7 @@
 require("@nomicfoundation/hardhat-toolbox");
 require('dotenv').config()
 require("@nomicfoundation/hardhat-verify");
+require("./tasks/block-number");
 const SEPOLIA_RPC_URL =
   process.env.SEPOLIA_RPC_URL ||
   "https://eth-sepolia.g.alchemy.com/v2/8cAuHYtk5pZaV5S4z9QKIKLbAj3JEc3i"
