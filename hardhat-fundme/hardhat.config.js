@@ -17,7 +17,7 @@ const PRIVATE_KEY =
     process.env.PRIVATE_KEY ||
     "976ec26d8620bbdeff41ac071ad26407ee1bd7e03cf7b10d27067e91ccfc2ff9"
 const ETHERSCAN_API_KEY = process.env.ETHERSCAN_API_KEY || "DTYVB7ZJTXFGCXNHQJSQS53UPJKR2FIT35"
-
+const COINMARKETCAP_API_KEY = process.env.COINMARKETCAP_API_KEY
 module.exports = {
     defaultNetwork: "hardhat",
     networks: {
