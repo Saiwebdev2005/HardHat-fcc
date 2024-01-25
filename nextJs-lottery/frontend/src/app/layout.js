@@ -1,6 +1,5 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { MoralisProvider } from "react-moralis";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,9 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <MoralisProvider initializeOnMount={false}>
       <body className={inter.className}>{children}</body>
-      </MoralisProvider>
     </html>
   );
 }
